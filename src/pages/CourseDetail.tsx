@@ -30,14 +30,21 @@ export default function CourseDetail() {
         <h1 className="mt-2 font-display text-[26px] font-bold">{m.title}</h1>
         <p className="mt-2 text-sm leading-relaxed" style={{ color: '#B9C6DA' }}>{m.description}</p>
         <div className="mt-4 flex items-center gap-4 text-xs muted">
-          <span className="flex items-center gap-1"><BookMarked size={14} /> {mlessons.length} 章</span>
+          <span className="flex items-center gap-1"><BookMarked size={14} /> {mlessons.length} 讲</span>
           <span className="flex items-center gap-1"><Clock3 size={14} /> 约 {mlessons.reduce((s, l) => s + l.duration, 0)} 分钟</span>
-          <span>已完成 {done} 章</span>
+          <span>已完成 {done} 讲</span>
+        </div>
+        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 border-t border-[#263247] pt-3 text-[11px] muted">
+          <span>理论单元 {mlessons.reduce((s, l) => s + (l.theories?.length ?? 0), 0)}</span>
+          <span>原著阅读 {mlessons.reduce((s, l) => s + (l.readings?.length ?? 0), 0)}</span>
+          <span>横向比较 {mlessons.reduce((s, l) => s + (l.comparisons?.length ?? 0), 0)}</span>
+          <span>练习 {mlessons.reduce((s, l) => s + (l.exercises?.length ?? 0), 0)} 题</span>
+          <span>测验 {mlessons.reduce((s, l) => s + (l.quiz?.length ?? 0), 0)} 题</span>
         </div>
       </div>
 
       <section className="mb-6">
-        <h2 className="section-title mb-3">本章节目录</h2>
+        <h2 className="section-title mb-3">本部分目录</h2>
         <div className="space-y-2.5">
           {mlessons.length === 0 && (
             <div className="rounded-2xl glass p-5 text-sm muted">
