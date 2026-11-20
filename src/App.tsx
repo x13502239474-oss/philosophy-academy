@@ -25,6 +25,7 @@ export default function App() {
     <>
       <div className="ambient-bg" />
       <div className="grid-overlay" />
+      <div className="paper-grain" />
       <ScrollReset />
       <div className="app-shell pb-nav">
         <Routes>
