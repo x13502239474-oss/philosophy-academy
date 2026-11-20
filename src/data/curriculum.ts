@@ -22,7 +22,7 @@ export const modules: CourseModule[] = [
     description:
       '哲学不是一堆观点，而是一套提问与论证的手艺。这一部分先界定哲学的研究对象与问题类型，再顺着希腊的起源、苏格拉底的诘问、柏拉图的理念、亚里士多德的体系一路走到中世纪与近代的转折，给你一条能站住的时间线。',
     icon: 'Compass',
-    color: '#4B9EFF',
+    color: '#793D36',
     lessonIds: ['l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'l7'],
     source: ['bigquestions', 'history'],
   },
@@ -35,7 +35,7 @@ export const modules: CourseModule[] = [
     description:
       '从「存在是什么」这个最拗口也最根本的问题出发，处理实体与属性、物质与精神、身心关系、因果、自由意志、时空与可能世界。这里没有可以背完的结论，只有一条条必须自己走一遍的论证。',
     icon: 'Atom',
-    color: '#8C7CFF',
+    color: '#A8874F',
     lessonIds: ['l8', 'l9', 'l10', 'l11', 'l12', 'l13', 'l14'],
     source: ['bigquestions', 'history', 'thought'],
   },
@@ -48,7 +48,7 @@ export const modules: CourseModule[] = [
     description:
       '知识的三分定义与盖梯尔反例、四种真理理论、从皮浪到缸中之脑的怀疑论、理性主义与经验主义的来源之争、归纳问题与绿蓝悖论、认识的边界与科学合理性。学完你会对自己的每一个信念多问一句：理由够吗。',
     icon: 'Eye',
-    color: '#43D9D0',
+    color: '#586044',
     lessonIds: ['l15', 'l16', 'l17', 'l18', 'l19', 'l20'],
     source: ['bigquestions', 'history', 'thought'],
   },
@@ -61,7 +61,7 @@ export const modules: CourseModule[] = [
     description:
       '笛卡尔的怀疑与「我思」、斯宾诺莎的实体一元论、莱布尼茨的单子、洛克的白板、贝克莱与休谟的彻底化，最后收在一场正面交锋里：理性主义与经验主义究竟在争什么，康德又如何把这场争论改写。',
     icon: 'BookOpen',
-    color: '#5EC8F5',
+    color: '#8A6A3E',
     lessonIds: ['l21', 'l22', 'l23', 'l24', 'l25'],
     source: ['history', 'bigquestions'],
   },
